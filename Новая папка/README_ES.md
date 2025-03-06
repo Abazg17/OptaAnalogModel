@@ -1,4 +1,4 @@
-# ✨ Modelo análogo a OPTA para predecir probabilidades en ligas de fútbol
+# ✨ Modelo análogo a OPTA para predecir probabilidades en ligas de fútbol (ATraducción de AI)
 Usamos el método de máxima verosimilitud y el método de Montecarlo para simular los resultados finales de las ligas europeas.
 
 <br><br>
