@@ -47,11 +47,30 @@ El modelo considera que, por ejemplo, un 0:2 y un 6:8 son similares en términos
 ## <a name="rendimiento">📊 Rendimiento
 Los modelos se comparan con OPTA utilizando el error absoluto medio (MAE) y el "MAE en eventos probables" (MAE para eventos con una probabilidad mayor al 1%). Los resultados completos están en la carpeta `models_metrics`.
 
-| Modelo       | MAE     | MAE en >1%   | Tiempo de entrenamiento |
-|--------------|---------|--------------|--------------------|
-| Modelo 1     | 92%     | 90%          | Rápido             |
-| Modelo 2     | 89%     | 85%          | Rápido             |
-| Modelo 3     | 95%     | 93%          | Lento (4-5 min) |
+<table>
+  <tr>
+    <th rowspan="2">Modelo</th>
+    <th colspan="4">MAE</th>
+    <th colspan="4">MAE >1%</th>
+    <th rowspan="2">Tiempo de entrenamiento</th>
+  </tr>
+  <tr>
+    <th>ITA</th> <th>ESP</th> <th>RUS</th> <th>Total</th>
+    <th>ITA</th> <th>ESP</th> <th>RUS</th> <th>Total</th>
+  </tr>
+  <tr>
+    <td>Modelo para resultado</td> <td><i>0.83%</i></td> <td><i>0.82%</i></td> <td><i>0.89%</i></td> <td><strong>0.84%</strong></td>
+    <td><i>2.60%</i></td> <td><i>2.09%</i></td> <td><i>2.16%</i></td> <td><strong>2.28%</strong></td> <td>Muy rápido</td>
+  </tr>
+  <tr>
+    <td>Modelo para marcador</td> <td><i>0.68%</i></td> <td><i>0.71%</i></td> <td><i>1.08%</i></td> <td><strong>0.82%</strong></td>
+    <td><i>2.12%</i></td> <td><i>1.79%</i></td> <td><i>2.59%</i></td> <td><strong>2.16%</strong></td> <td>Rápido</td>
+  </tr>
+  <tr>
+    <td>Modelo para diferencia de goles</td> <td><i>0.84%</i></td> <td><i>0.73%</i></td> <td><i>1.26%</i></td> <td><strong>0.94%</strong></td>
+    <td><i>2.65%</i></td> <td><i>1.85%</i></td> <td><i>3.01%</i></td> <td><strong>2.5%</strong></td> <td>Despacio (4-5 min)</td>
+  </tr>
+</table>
 
 <br><br>
 ## <a name="instalacion">🛠 Instalación
