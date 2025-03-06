@@ -106,5 +106,5 @@ pip install -r requirements.txt
 - Commentator & Translator: ChatGPT  
 - Analyst: Said that the key is in proper result interpretation  
 - Advertising: PFC CSKA  
-- My favorite footballer: Esmir Bayraktarevic  
+- My favorite footballer: Esmir Bajraktarevic  
 - Hotel: Trivago
