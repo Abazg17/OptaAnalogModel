@@ -83,7 +83,7 @@ All metrics and results can be found in the `models_metrics` folder.
   </tr>
   <tr>
     <td>Diff_score model</td> <td><i>0.84%</i></td> <td><i>0.73%</i></td> <td><i>1.26%</i></td> <td><strong>0.94%</strong></td>
-    <td><i>2.65%</i></td> <td><i>1.85%</i></td> <td><i>3.01%</i></td> <td><strong>2.5%</strong></td> <td>Slow (4-5 мин)</td>
+    <td><i>2.65%</i></td> <td><i>1.85%</i></td> <td><i>3.01%</i></td> <td><strong>2.5%</strong></td> <td>Slow (4-5 min)</td>
   </tr>
 </table> 
 
