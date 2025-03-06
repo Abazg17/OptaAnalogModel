@@ -62,13 +62,30 @@ Poisson distribution is also used for this. The result is then simulated similar
 The models are compared to OPTA using Mean Absolute Error (MAE) and "MAE on probable outcomes" (i.e., outcomes with a probability above 1%).  
 All metrics and results can be found in the `models_metrics` folder.  
 
-| Model        | MAE  | MAE on >1%  | Training Time      |  
-|-------------|------|------------|-------------------|  
-| Model 1     | 92%  | 90%        | Fast              |  
-| Model 2     | 89%  | 85%        | Fast              |  
-| Model 3     | 95%  | 93%        | Slow (4-5 min)    |  
-
-<br><br>  
+<table>
+  <tr>
+    <th rowspan="2">Model</th>
+    <th colspan="4">MAE</th>
+    <th colspan="4">MAE >1%</th>
+    <th rowspan="2">Training time</th>
+  </tr>
+  <tr>
+    <th>ITA</th> <th>ESP</th> <th>RUS</th> <th>Total</th>
+    <th>ITA</th> <th>ESP</th> <th>RUS</th> <th>Total</th>
+  </tr>
+  <tr>
+    <td>Result model</td> <td><i>0.83%</i></td> <td><i>0.82%</i></td> <td><i>0.89%</i></td> <td><strong>0.84%</strong></td>
+    <td><i>2.60%</i></td> <td><i>2.09%</i></td> <td><i>2.16%</i></td> <td><strong>2.28%</strong></td> <td>Very fast</td>
+  </tr>
+  <tr>
+    <td>Score</td> <td><i>0.68%</i></td> <td><i>0.71%</i></td> <td><i>1.08%</i></td> <td><strong>0.82%</strong></td>
+    <td><i>2.12%</i></td> <td><i>1.79%</i></td> <td><i>2.59%</i></td> <td><strong>2.16%</strong></td> <td>Fast</td>
+  </tr>
+  <tr>
+    <td>Diff_score model</td> <td><i>0.84%</i></td> <td><i>0.73%</i></td> <td><i>1.26%</i></td> <td><strong>0.94%</strong></td>
+    <td><i>2.65%</i></td> <td><i>1.85%</i></td> <td><i>3.01%</i></td> <td><strong>2.5%</strong></td> <td>Slow (4-5 мин)</td>
+  </tr>
+</table> 
 
 ## <a name="installation">🛠 Installation  
 1. Clone the repository  
