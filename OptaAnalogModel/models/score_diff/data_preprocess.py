@@ -3,7 +3,7 @@ import numpy as np
 
 def diff_score(result):
     """
-    Сравнивает результат матча между двумя командами.
+    Возвращает разницу мячей в матче.
 
     Аргументы:
     result : str
@@ -48,7 +48,7 @@ def process_season_data(data, teams, season_label):
                     season_label    # Сезон (метка)
                 ])
                 
-    return pd.DataFrame(comparison_data, columns=["Домашняя команда", "Гостевая команда", "Результат", "Сезон"]), teams, data
+    return pd.DataFrame(comparison_data, columns=["Домашняя команда", "Гостевая команда", "Разница", "Сезон"]), teams, data
 
 def process_all_seasons(file):
     """

@@ -51,6 +51,7 @@ def loss_goals(params, season_weight_factor, result_n, team_to_index, num_teams)
         # Получаем силу хозяев и гостей в очном матче с учетом домашнего преимущества
         lambda_home, lambda_away = count_teams_rating(s, h, home, away, team_to_index)
 
+        # Вероятность именно получившегося исхода
         prob = poisson.pmf(goal_home, lambda_home) * poisson.pmf(goal_away, lambda_away)
 
         prob = max(prob, 1e-8)  # Защита от log(0), так как log(0) не определён

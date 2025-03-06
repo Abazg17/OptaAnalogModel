@@ -56,13 +56,9 @@ def loss_goals(params, season_weight_factor, result_n, team_to_index, num_teams)
 
         if result == 1:
             total_loss -= np.log(p_win_home) * season_weight
-            # if (p_win_away > 1e-8):
-            #   total_loss += np.log(p_win_away) * season_weight
         elif result == 0:
             total_loss -= np.log(p_draw) * season_weight
         elif result == -1:
             total_loss -= np.log(p_win_away) * season_weight
-            # if (p_win_home > 1e-8):
-            #   total_loss += np.log(p_win_home) * season_weight
 
     return total_loss

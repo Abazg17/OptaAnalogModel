@@ -87,8 +87,7 @@ pip install -r requirements.txt
    - `Score` – predice el marcador exacto.
    - `Score_diff` – predice la diferencia de goles.
 2. Para ejecutar el modelo:
-   - Ejecutar `main.py` (`python main.py` desde la carpeta del modelo).
-   - Abrir el archivo `.exe`.
+   - Ejecutar `main.py` (`python main.py` desde la carpeta del modelo)
 3. Seleccione un campeonato de la carpeta `for_data` y mueva **solo este archivo** a la carpeta del modelo.
    Asegúrese de que haya **un único archivo .xlsx** en la carpeta.
 4. Si usa datos personalizados, deben cumplir con estas condiciones:

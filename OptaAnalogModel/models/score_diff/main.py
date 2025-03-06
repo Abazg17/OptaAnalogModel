@@ -7,7 +7,7 @@ import numpy as np  # Для работы с массивами
 import pandas as pd  # Для создания таблицы с результатами
 from scipy.optimize import minimize  # Для оптимизации параметров модели
 import os
-from tqdm import tqdm
+from tqdm import tqdm # Для отслеживания прогресса
 
 #------------------------------------------------------------------------------------------
 

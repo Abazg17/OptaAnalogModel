@@ -3,7 +3,7 @@ import numpy as np
 
 def check_result(result):
     """
-    Сравнивает результат матча между двумя командами.
+    Возвращает результат матча между двумя командами.
 
     Аргументы:
     result : str
@@ -12,7 +12,7 @@ def check_result(result):
         
     Возвращает:
     int : 
-        Разница мячей
+        Результат игры (1 - победа хозяев, 0 - ничья, -1 - победа гостей)
     """
     score1, score2 = int(result[0]), int(result[-1])
     if (score1 > score2):

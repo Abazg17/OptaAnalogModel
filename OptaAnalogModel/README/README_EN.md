@@ -103,9 +103,8 @@ pip install -r requirements.txt
    - `Result` – first model, predicting match outcomes  
    - `Score` – second model, predicting exact scores  
    - `Score_diff` – third model, predicting goal difference  
-2. There are two ways to run the model:  
+2. The main way to run the model:  
    - Execute `main.py` (`python main.py` from the model’s folder)  
-   - Run the `.exe` file (just open it)  
 3. To run a model, select a championship dataset from the `for_data` folder and move **ONLY THIS FILE** into the chosen model’s folder.  
    The only `.xlsx` file in the folder should be the one you’re using.  
 4. If using custom data, the following conditions must be met:  
